@@ -66,12 +66,12 @@ int main() {
    inversa1 = 1.0 / densidade1;
    inversa2 = 1.0 / densidade2;
 
-    //manter armazenado o super poder
    double superpoder1, superpoder2;
+    
    superpoder1 = populacao1 + area1 + pib1 + turismo1 + percapita1 + inversa1;
    superpoder2 = populacao2 + area2 + pib2 + turismo2 + percapita2 + inversa2;
   
-    // Desenvolvolvimento da lógica de comparação entre duas cartas.
+    // Desenvolvolvimento da lógica de comparação e o uso de switch.
       
    printf("Pronto para conferir a carta vencedora?\n");
    printf(" \n");
