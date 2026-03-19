@@ -89,7 +89,7 @@ int main() {
 
    int criterio;
 
-   printf("O critério escolhido é o:");
+   printf("O critério escolhido é o: ");
    scanf("%u", &criterio);
    printf("\n");
 
