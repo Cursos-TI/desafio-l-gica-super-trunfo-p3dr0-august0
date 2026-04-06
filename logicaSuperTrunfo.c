@@ -483,6 +483,11 @@ int main() {
          printf("5 - O sistema compara os valores.\n");
          printf("6 - Serao exibidos os vencedores de cada rodada.\n\n");
 
+         printf("Como funcionam as rodadas?\n");
+         printf("- Rodada 1: Primeiro criterio escolhido\n");
+         printf("- Rodada 2: Segundo criterio escolhido\n");
+         printf("- Rodada 3: Soma dos dois criterios anteriores\n\n");
+
          printf("Quais os critérios disponíveis?\n");
          printf("- População (maior vence)\n");
          printf("- Área (maior vence)\n");
