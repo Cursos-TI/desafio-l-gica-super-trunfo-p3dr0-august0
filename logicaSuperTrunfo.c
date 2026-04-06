@@ -19,6 +19,7 @@ int main() {
    float pib1, pib2;
    unsigned int turismo1, turismo2;
     
+   printf("========== JOGO SUPER TRUNFO ==========\n\n");
    printf("Menu principal\n\n");
    printf("1 - Iniciar Jogo\n");
    printf("2 - Ver Regras\n");
@@ -424,22 +425,63 @@ int main() {
             break;
          case 'N':
             printf("Obrigado por jogar! Espero te ver por aqui novamente.\n");
+            printf("====================================\n");
             break;
          default:
             printf("Opção inválida. Tente novamente.\n");
             return 0;
          }
          
-      break;
+         break;
       case 2:
-      printf("Regras\n");
-      break;
+         printf("========== REGRAS DO JOGO ==========\n\n");
+
+         printf("Objetivo?\n");
+         printf("O jogador deve comparar sua carta com a carta da máquina.\n");
+         printf("Serão escolhidos dois critários diferentes.\n");
+         printf("Quem vencer mais rodadas ganha o jogo.\n\n");
+
+         printf("Como funciona?\n");
+         printf("1 - Voce ira cadastrar uma cidade com seus dados.\n");
+         printf("2 - A maquina gera automaticamente outra carta.\n");
+         printf("3 - Voce escolhe o primeiro criterio.\n");
+         printf("4 - Voce escolhe o segundo criterio (diferente do primeiro).\n");
+         printf("5 - O sistema compara os valores.\n");
+         printf("6 - Serao exibidos os vencedores de cada rodada.\n\n");
+
+         printf("Quais os critérios disponíveis?\n");
+         printf("- População (maior vence)\n");
+         printf("- Área (maior vence)\n");
+         printf("- PIB (maior vence)\n");
+         printf("- Turismo (maior vence)\n");
+         printf("- PIB Percapita (maior vence)\n");
+         printf("- Densidade Populacional (menor vence)\n");
+         printf("- Super Poder (soma geral dos atributos, porém na densidade\n");
+         printf("é considerado seu valor inverso (1/densidade))\n\n");
+
+         printf("Regras Importantes!\n");
+         printf("- Não repetir o mesmo critério nas duas rodadas\n");
+         printf("- Digitar apenas números nas opções do menu\n");
+         printf("- Nõo deixar campos vazios\n");
+         printf("- Usar '_' no lugar de espaços no nome da cidade\n");
+         printf("- Digitar apenas valores positivos\n\n");
+
+         printf("!ATENÇÃO!\n");
+         printf("Se você digitar alguma opção inválida ou cometer erro,\n");
+         printf("o programa será encerrado.\n");
+         printf("Para jogar novamente, será necessário abrir o programa novamente.\n\n");
+
+         printf("====================================\n");
+         break;
       case 3:
       printf("Aguardo seu retorno. Saindo...\n");
-      break;
+         break;
       default:
       printf("Opção inválida. Tente novamente.\n");
+      break;
    }  
+
+   system ("pause");
 
    return 0;
 }
