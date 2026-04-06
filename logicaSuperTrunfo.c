@@ -173,6 +173,7 @@ int main() {
                break;
             default:
                printf("Opção inválida. Tente novamente.\n");
+               system ("pause");
                return 0;
          }
 
@@ -291,6 +292,7 @@ int main() {
                }
          } else {
             printf("Os critérios devem ser diferentes. Tente novamente.\n");
+            system ("pause");
             return 0;
          }
    
@@ -423,12 +425,44 @@ int main() {
             printf("Super Poder: %.2f\n\n", superpoder2);
             printf("Poder da terceira rodada (soma dos atributos escolhidos nos critérios 1 e 2): %.2f\n\n", poderB);
             break;
+         case 's':
+            printf("Carta 1:\n");
+            printf("Estado: %s\n", estado1);
+            printf("Código: %3s\n", codigo1);
+            printf("Nome da cidade: %s\n", cidade1);
+            printf("População: %i\n", populacao1);
+            printf("Área: %.2f km²\n", area1);
+            printf("PIB: %.2f bilhões de reais\n", pib1);
+            printf("Número de pontos turísticos: %i\n", turismo1);
+            printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+            printf("PIB per Capita: %.2f reais\n", percapita1);
+            printf("Super Poder: %.2f\n\n", superpoder1);
+            printf("Poder da terceira rodada (soma dos atributos escolhidos nos critérios 1 e 2): %.2f\n\n", poderA);
+
+            printf("Carta 2:\n");
+            printf("Estado: %s\n", estado2);
+            printf("Código: %3s\n", codigo2);
+            printf("Nome da cidade: %s\n", cidade2);
+            printf("População: %i\n", populacao2);
+            printf("Área: %.2f km²\n", area2);
+            printf("PIB: %.2f bilhões de reais\n", pib2);
+            printf("Número de pontos turísticos: %i\n", turismo2);
+            printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+            printf("PIB per Capita: %.2f reais\n", percapita2);
+            printf("Super Poder: %.2f\n\n", superpoder2);
+            printf("Poder da terceira rodada (soma dos atributos escolhidos nos critérios 1 e 2): %.2f\n\n", poderB);
+            break;
          case 'N':
+            printf("Obrigado por jogar! Espero te ver por aqui novamente.\n");
+            printf("====================================\n");
+            break;
+         case 'n':
             printf("Obrigado por jogar! Espero te ver por aqui novamente.\n");
             printf("====================================\n");
             break;
          default:
             printf("Opção inválida. Tente novamente.\n");
+            system ("pause");
             return 0;
          }
          
@@ -456,8 +490,7 @@ int main() {
          printf("- Turismo (maior vence)\n");
          printf("- PIB Percapita (maior vence)\n");
          printf("- Densidade Populacional (menor vence)\n");
-         printf("- Super Poder (soma geral dos atributos, porém na densidade\n");
-         printf("é considerado seu valor inverso (1/densidade))\n\n");
+         printf("- Super Poder (soma geral dos atributos, porém na densidade é considerado seu valor inverso (1/densidade))\n\n");
 
          printf("Regras Importantes!\n");
          printf("- Não repetir o mesmo critério nas duas rodadas\n");
@@ -467,8 +500,7 @@ int main() {
          printf("- Digitar apenas valores positivos\n\n");
 
          printf("!ATENÇÃO!\n");
-         printf("Se você digitar alguma opção inválida ou cometer erro,\n");
-         printf("o programa será encerrado.\n");
+         printf("Se você digitar alguma opção inválida ou cometer erro, o programa será encerrado.\n");
          printf("Para jogar novamente, será necessário abrir o programa novamente.\n\n");
 
          printf("====================================\n");
