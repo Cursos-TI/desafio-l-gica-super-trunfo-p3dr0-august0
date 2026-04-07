@@ -38,7 +38,7 @@ int main() {
          scanf("%s", estado1);
          printf("Digite o código da carta: \n");
          scanf(" %s", codigo1);
-         printf("Digite o nome da cidade (usando '_' no lugar da barra de espaço): \n");
+         printf("Digite o nome da cidade (usando '_' no lugar do espaço): \n");
          scanf("%s", cidade1);
          printf("Digite o número de habitantes: \n");
          scanf("%u", &populacao1);
@@ -476,17 +476,18 @@ int main() {
          printf("Quem vencer mais rodadas ganha o jogo.\n\n");
 
          printf("Como funciona?\n");
-         printf("1 - Voce ira cadastrar uma cidade com seus dados.\n");
-         printf("2 - A maquina gera automaticamente outra carta.\n");
-         printf("3 - Voce escolhe o primeiro criterio.\n");
-         printf("4 - Voce escolhe o segundo criterio (diferente do primeiro).\n");
+         printf("1 - Você ira cadastrar uma cidade com seus dados.\n");
+         printf("*O codigo é a sigla do estado mais 01. Exemplo: XX01.*\n");
+         printf("2 - A máquina gera automaticamente outra carta.\n");
+         printf("3 - Você escolhe o primeiro critério.\n");
+         printf("4 - Você escolhe o segundo critério (diferente do primeiro).\n");
          printf("5 - O sistema compara os valores.\n");
          printf("6 - Serao exibidos os vencedores de cada rodada.\n\n");
 
          printf("Como funcionam as rodadas?\n");
-         printf("- Rodada 1: Primeiro criterio escolhido\n");
-         printf("- Rodada 2: Segundo criterio escolhido\n");
-         printf("- Rodada 3: Soma dos dois criterios anteriores\n\n");
+         printf("- Rodada 1: Primeiro critério escolhido\n");
+         printf("- Rodada 2: Segundo critério escolhido\n");
+         printf("- Rodada 3: Soma dos dois critérios anteriores\n\n");
 
          printf("Quais os critérios disponíveis?\n");
          printf("- População (maior vence)\n");
